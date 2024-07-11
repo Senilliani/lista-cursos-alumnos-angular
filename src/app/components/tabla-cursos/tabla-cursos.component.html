@@ -1,0 +1,24 @@
+<!-- cursos.component.html -->
+
+<div class="container">
+  <h2 class="my-4">Lista de Cursos</h2>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre del Curso</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Duración (horas)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let curso of cursos">
+        <th scope="row">{{ curso.id }}</th>
+        <td>{{ curso.nombre }}</td>
+        <td>{{ curso.descripcion }}</td>
+        <td>{{ curso.duracion }}</td>
+      </tr>
+      <!-- Añadir más filas según sea necesario -->
+    </tbody>
+  </table>
+</div>

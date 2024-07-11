@@ -1,0 +1,21 @@
+<!-- alumnos.component.html -->
+
+<div class="container">
+  <h2 class="my-4">Lista de Alumnos</h2>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Curso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alumno of alumnos">
+        <td>{{ alumno.nombre }}</td>
+        <td>{{ alumno.edad }}</td>
+        <td>{{ alumno.curso }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
